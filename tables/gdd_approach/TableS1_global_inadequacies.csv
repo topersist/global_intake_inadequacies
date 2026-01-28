@@ -1,16 +1,16 @@
 "nutrient_type","nutrient_label","nutrient","units","ar_source","ndeficient","pdeficient"
-"Vitamin","Vitamin E","Vitamin E","mg","IOM",5.02890131755997,0.66878137468608
-"Vitamin","Riboflavin (vitamin B2)","Riboflavin","mg","EFSA",4.0988616395822,0.545097656300378
-"Vitamin","Folate (vitamin B9)","Folate","µg DFE","EFSA",4.04746799094698,0.538262939766097
-"Vitamin","Vitamin C","Vitamin C","mg","EFSA",4.01120702611616,0.533440682104703
-"Vitamin","Vitamin B6 (pyridoxine)","Vitamin B6","mg","EFSA",3.87120598900383,0.51482228413962
-"Vitamin","Vitamin A (RAE)","Vitamin A (RAE)","µg RAE","EFSA",3.60422001041606,0.479316467161595
-"Vitamin","Vitamin B12 (cobalamin)","Vitamin B12","ug","IOM",2.95971718519094,0.393605601462552
-"Vitamin","Thiamin (vitamin B1)","Thiamin","mg","IOM",2.23535515737214,0.297274454330378
-"Vitamin","Niacin (vitamin B3)","Niacin","mg","IOM",1.65994164073547,0.220751608012936
-"Mineral","Iodine","Iodine","ug","IOM",5.07883423707915,0.675421832402266
-"Mineral","Calcium","Calcium","mg","EFSA",4.98697488820265,0.663205680654591
-"Mineral","Iron","Iron","mg","EFSA",4.87302443793021,0.648051686975455
-"Mineral","Zinc","Zinc","mg","EFSA",3.47052355587225,0.461536500323062
-"Mineral","Selenium","Selenium","ug","IOM",2.82968079011276,0.376312377044738
+"Vitamin","Vitamin E","Vitamin E","mg","IOM",5.02023746372765,0.667629189803107
+"Vitamin","Riboflavin (vitamin B2)","Riboflavin","mg","EFSA",4.08564049144825,0.543339407914578
+"Vitamin","Folate (vitamin B9)","Folate","µg DFE","EFSA",4.03853375339403,0.537074797208682
+"Vitamin","Vitamin C","Vitamin C","mg","EFSA",4.00518648469136,0.532640024920126
+"Vitamin","Vitamin B6 (pyridoxine)","Vitamin B6","mg","EFSA",3.85473176507091,0.512631417102665
+"Vitamin","Vitamin A (RAE)","Vitamin A (RAE)","µg RAE","EFSA",3.60281478968207,0.479129590268438
+"Vitamin","Vitamin B12 (cobalamin)","Vitamin B12","ug","IOM",2.94925220651454,0.392213889360184
+"Vitamin","Thiamin (vitamin B1)","Thiamin","mg","IOM",2.21690917419813,0.294821367819916
+"Vitamin","Niacin (vitamin B3)","Niacin","mg","IOM",1.65250856786326,0.219763101701178
+"Mineral","Calcium","Calcium","mg","EFSA",4.99623635549941,0.664437340701033
+"Mineral","Iron","Iron","mg","EFSA",4.87553946220566,0.648386153946686
+"Mineral","Iodine","Iodine","ug","IOM",3.75014484635568,0.498722656748128
+"Mineral","Zinc","Zinc","mg","EFSA",3.47185393884575,0.461713424724178
 "Mineral","Magnesium","Magnesium","mg","IOM",2.36269966035563,0.314209690555163
+"Mineral","Selenium","Selenium","ug","IOM",1.00660484619305,0.133865934185659

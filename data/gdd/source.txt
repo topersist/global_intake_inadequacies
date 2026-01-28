@@ -1,0 +1,1 @@
+Folders 'raw' and 'processed' were missing from the original GitHub download. I created the folders and placed the needed data in, directly from the GDD.

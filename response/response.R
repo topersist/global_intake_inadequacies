@@ -10,7 +10,7 @@ rm(list = ls())
 library(tidyverse)
 library(nutriR)
 
-# Seed
+# Seed2
 set.seed(123)
 
 # Helper function

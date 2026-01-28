@@ -7,7 +7,7 @@ rm(list = ls())
 ################################################################################
 
 # Packages
-library(GENuS)
+# library(GENuS)
 library(tidyverse)
 
 # Directories
@@ -17,7 +17,7 @@ plotdir <- "data/gdd/figures"
 gisdir <- "data/world/processed"
 
 # Read data
-data_orig <- readRDS(data, file=file.path(outdir, "GDD_2018_intakes_national_for_analysis.Rds"))
+data_orig <- readRDS(data, file=file.path(outdir, "GDD_2018_intakes_national.Rds")) # changed by Sterre; removed 'for_analysis' in filename so it runs
 
 # Read world data
 world_lg <- readRDS(file=file.path(gisdir, "world_large.Rds"))

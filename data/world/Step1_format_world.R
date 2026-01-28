@@ -49,8 +49,12 @@ world_sm <- world_sm_orig %>%
 freeR::which_duplicated(world_sm$iso3)
 freeR::which_duplicated(world_sm$country)
 
+mollweide <- sf::st_crs("+proj=moll") # added by Sterre; AI suggestion
 # Format world (large) - for centroids
 world_lg <- world_lg_orig %>%
+  sf::st_make_valid() %>%  # added by Sterre; AI suggestion to fix geometries
+  sf::st_transform(mollweide) %>%  # added by Sterre; AI suggestion to reproject to equal-area CRS
+
   # Simplify
   select(iso3_orig=su_a3,
          country_orig=subunit) %>%
@@ -67,6 +71,9 @@ world_lg <- world_lg_orig %>%
   # Fix Cyprus
   mutate(iso3=ifelse(country_orig %in% c("Northern Cyprus", "Cyprus No Mans Area", "US Naval Base Guantanamo Bay"), iso3_orig, iso3),
          country=ifelse(country_orig %in% c("Northern Cyprus", "Cyprus No Mans Area", "US Naval Base Guantanamo Bay"), country_orig, country)) %>%
+
+  sf::st_transform(wgs84) %>% # added by Sterre; AI suggestion to convert back to WGS84 for mapping
+
   # Simplify
   select(iso3, country, area_sqkm, geometry)
 

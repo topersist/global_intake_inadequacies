@@ -16,7 +16,7 @@ library(RColorBrewer)
 datadir <- "data" # for actual app
 codedir <- "code"  # for actual app
 # datadir <- "shiny_app/data" # when testing
-# codedir <- "shiny_app/code" # when testing
+codedir <- "shiny_app/code" # when testing
 
 # Source code
 sapply(list.files(codedir), function(x) source(file.path(codedir, x)))

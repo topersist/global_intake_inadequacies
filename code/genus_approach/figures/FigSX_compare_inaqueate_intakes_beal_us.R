@@ -12,7 +12,7 @@ library(countrycode)
 
 # Directories
 plotdir <- "figures"
-bealdir <- "data/beal_etal_2017/raw"
+bealdir <- "data/beal_etal_2017/processed" #changed from raw by Sterre
 datadir <- "output"
 
 # Read data

@@ -41,12 +41,22 @@ world_sm <- world_sm_orig %>%
   mutate(genus_yn=ifelse(genus_yn==F, NA, genus_yn),
          hdi_catg=factor(hdi_catg, levels=c("Low", "Medium", "High", "Very high")))
 
+mollweide <- sf::st_crs("+proj=moll") # Sterre change by AI
 # Format world (large) - for centroids
 world_lg <- world_lg_orig %>%
+  # Fix invalid geometries first
+  sf::st_make_valid() %>%
+  # Project to equal-area CRS
+  sf::st_transform(mollweide) %>%
+  # Keep ISO
   select(gu_a3) %>%
-  rename(iso3=gu_a3) %>%
-  # Calculate area
-  mutate(area_sqkm=sf::st_area(.) %>% as.numeric() %>% measurements::conv_unit(., from="m2", to="km2"))
+  rename(iso3 = gu_a3) %>%
+  # Calculate area safely and correctly
+  mutate(
+    area_sqkm = as.numeric(sf::st_area(.)) / 1e6
+  ) %>%
+  # Back to WGS84 for mapping/centroids
+  sf::st_transform(wgs84)
 
 # Format tiny countries - for plotting and centroids
 world_tiny <- world_tiny_orig  %>%

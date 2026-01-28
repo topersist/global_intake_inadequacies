@@ -6,3 +6,14 @@
 # Large data
 data/gdd/raw
 data/gdd/processed
+/figures
+/figures
+/figures/gdd_approach
+/figures/gdd_approach
+*.png
+*.png
+*.pdf
+*.png
+/figures/gdd_approach
+/output
+*.Rds
